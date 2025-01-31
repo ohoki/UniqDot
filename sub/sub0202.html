@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://uniq-dot.com/css/default.css" />
+    <!--[if lte IE 8]>
+      <script src="http://uniq-dot.com/js/html5.js"></script>
+    <![endif]-->
+    <script>
+      // 자바스크립트에서 사용하는 전역변수 선언
+      var g5_url = "http://uniq-dot.com";
+      var g5_bbs_url = "http://uniq-dot.com/bbs";
+      var g5_is_member = "";
+      var g5_is_admin = "";
+      var g5_is_mobile = "";
+      var g5_bo_table = "";
+      var g5_sca = "";
+      var g5_editor = "";
+      var g5_cookie_domain = "";
+    </script>
+    <script src="http://uniq-dot.com/js/jquery-1.8.3.min.js"></script>
+    <script src="http://uniq-dot.com/js/jquery.menu.js?ver=171222"></script>
+    <script src="http://uniq-dot.com/js/common.js?ver=171222"></script>
+    <script src="http://uniq-dot.com/js/wrest.js?ver=171222"></script>
+    <script src="http://uniq-dot.com/js/placeholders.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/js/slick.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="http://uniq-dot.com/js/font-awesome/css/font-awesome.min.css"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/common/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+          });
+
+        fetch("/common/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="sub0201 sub">
+      <div class="sub_title">
+        <img src="/img/sub02_title_pc.jpg" class="pc" />
+        <img src="/img/sub02_title_mo.jpg" class="mo" />
+        <h1>제품소개</h1>
+      </div>
+      <div class="sub02_content">
+        <div class="width">
+          <div class="sub02_title">
+            <span></span>
+            <p>Bio Quantum Dot</p>
+          </div>
+          <div class="contents">
+            바이오용 퀀텀닷(양자점)기술은 주로&nbsp;신약개발,&nbsp;진단시약
+            등의&nbsp;생명공학 연구&nbsp;등에 사용됩니다. 아주 작은 나노단위의
+            물질들의 이동경로나 화학물질들이 관측되기 위해서는 밝게 보이도록
+            형광물질로 표지해야 하는데 유니크닷에서 개발한 바이오용 양자점은
+            밝기가 10-100배 이상 높고 기존의 형광물질보다 안정성이 높으며 한번에
+            여러 타겟의 검사가 가능해 진단의학에서&nbsp;핵심소재로 각광받고
+            있습니다.
+          </div>
+          <div class="sub02_photo sub03_photo">
+            <ul>
+              <li>
+                <img src="/img/bio0101.jpg" />
+                <p>
+                  Bio Quantum Dot 을 이용한<br />
+                  breast cancer cell targeting
+                </p>
+              </li>
+              <li>
+                <img src="/img/bio0102.jpg" />
+                <p>
+                  Bio Quantum Dot 을 이용한 임신진단 키트 응용 <br /><span
+                    class="asd"
+                    >LFA test was performed. a) photographic image under UV-lamp
+                    and b) corresponding T/C ratio of each antigen. c)
+                    Photographic image of brush type R, G, B QBs and d)
+                    corresponding PL emission data.</span
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

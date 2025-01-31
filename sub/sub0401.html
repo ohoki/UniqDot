@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://uniq-dot.com/css/default.css" />
+    <!--[if lte IE 8]>
+      <script src="http://uniq-dot.com/js/html5.js"></script>
+    <![endif]-->
+    <script>
+      // 자바스크립트에서 사용하는 전역변수 선언
+      var g5_url = "http://uniq-dot.com";
+      var g5_bbs_url = "http://uniq-dot.com/bbs";
+      var g5_is_member = "";
+      var g5_is_admin = "";
+      var g5_is_mobile = "";
+      var g5_bo_table = "";
+      var g5_sca = "";
+      var g5_editor = "";
+      var g5_cookie_domain = "";
+    </script>
+    <script src="http://uniq-dot.com/js/jquery-1.8.3.min.js"></script>
+    <script src="http://uniq-dot.com/js/jquery.menu.js?ver=171222"></script>
+    <script src="http://uniq-dot.com/js/common.js?ver=171222"></script>
+    <script src="http://uniq-dot.com/js/wrest.js?ver=171222"></script>
+    <script src="http://uniq-dot.com/js/placeholders.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/js/slick.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="http://uniq-dot.com/js/font-awesome/css/font-awesome.min.css"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/common/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+          });
+
+        fetch("/common/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="sub0101 sub" style="margin-bottom: 0;">
+      <div class="sub_title">
+        <img src="/img/sub04_title_pc.jpg" class="pc" />
+        <img src="/img/sub04_title_mo.jpg" class="mo" />
+        <h1>Contact Us</h1>
+      </div>
+      <div class="width">
+        <div class="sub04_content">
+          <img src="/img/logo.png" /><br />
+          44919 울산광역시 울주군 언양읍 유니스트길 50, 251동 612호<br />
+          Tel : 052.217.3549<br />
+          E-mail : uniqdotup@gmail.com<br />
+          <a href="/index.html">http://www.uniq-dot.com</a>
+        </div>
+      </div>
+      <div class="map_attachment">
+        <div class="map_content">
+          <h3>CONTACT US</h3>
+          <p>
+            44919 울산광역시 울주군 언양읍 유니스트길 50, 251동 612호<br />
+            <a href="/index.html">http://www.uniq-dot.com</a>
+          </p>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d811.2708214592587!2d129.1887088292425!3d35.576336089539375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDM0JzM0LjgiTiAxMjnCsDExJzIxLjMiRQ!5e0!3m2!1sko!2skr!4v1580180897137!5m2!1sko!2skr"
+        width="100%"
+        height="400"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+      ></iframe>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

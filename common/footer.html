@@ -1,0 +1,60 @@
+<!-- 하단 시작 { -->
+<div id="ft">
+  <div id="ft_wr">
+    <div class="ft_cts">
+      <div class="ft_logo">
+        <img src="/img/footer_logo.png" />
+      </div>
+      <div class="ft_txt">
+        <span class="ft_title">유니크닷</span>
+        <span
+          >주소
+          <span class="txt_999"
+            >44919 울산광역시 울주군 언양읍 유니스트길 50, 251동 612호</span
+          ></span
+        ><br />
+        <span>Tel. <span class="txt_999">Tel : 052.217.3549</span></span
+        ><br />
+        <span>E-mail <span class="txt_999">uniqdotup@gmail.com</span></span
+        ><br />
+        <span id="ft_copy">Copyright © <b>UNIQ.</b> All rights reserved.</span>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" id="top_btn" style="display: none">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i
+    ><span class="sound_only">상단으로</span>
+  </button>
+  <script>
+    $(function () {
+      $("#top_btn").on("click", function () {
+        $("html, body").animate({ scrollTop: 0 }, "500");
+        return false;
+      });
+
+      $("#top_btn").hide();
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $("#top_btn").fadeIn();
+        } else {
+          $("#top_btn").fadeOut();
+        }
+      });
+    });
+  </script>
+</div>
+
+<!-- } 하단 끝 -->
+
+<script>
+  $(function () {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize(
+      "container",
+      get_cookie("ck_font_resize_rmv_class"),
+      get_cookie("ck_font_resize_add_class")
+    );
+  });
+</script>

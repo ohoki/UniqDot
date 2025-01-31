@@ -1,0 +1,207 @@
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+  <h2>팝업레이어 알림</h2>
+
+  <span class="sound_only">팝업레이어 알림이 없습니다.</span>
+</div>
+
+<script>
+  $(function () {
+    $(".hd_pops_reject").click(function () {
+      var id = $(this).attr("class").split(" ");
+      var ck_name = id[1];
+      var exp_time = parseInt(id[2]);
+      $("#" + id[1]).css("display", "none");
+      set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $(".hd_pops_close").click(function () {
+      var idb = $(this).attr("class").split(" ");
+      $("#" + idb[1]).css("display", "none");
+    });
+    $("#hd").css("z-index", 1000);
+  });
+</script>
+<!-- } 팝업레이어 끝 --><!--head 시작-->
+<!--PC-->
+<div class="head_pc">
+  <div class="width">
+    <a href="/index.html">
+      <img src="/img/logo.png" title="" />
+    </a>
+    <ul>
+      <li>
+        <a href="/sub/sub0101.html">회사소개</a>
+        <ul class="hover_menu">
+          <li>
+            <a href="/sub/sub0101.html">대표인사말</a>
+          </li>
+          <li>
+            <a href="/sub/sub0102.html">홍보영상</a>
+          </li>
+          <li>
+            <a href="/sub/sub0103.html">기업정보</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/sub/sub0201.html">제품소개</a>
+        <ul class="hover_menu">
+          <li>
+            <a href="/sub/sub0201.html">InP Quantum Dot</a>
+          </li>
+          <li>
+            <a href="/sub/sub0202.html">Bio Quantum Dot</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/sub/sub0301.html">사업소개</a>
+        <ul class="hover_menu">
+          <li>
+            <a href="/sub/sub0301.html">Quantum Dot</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/sub/sub0401.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!--mobile-->
+<div class="head_mo">
+  <a href="/index.html" class="mo_logo"><img src="/img/logo.png" /></a>
+  <div class="menu">
+    <a></a>
+  </div>
+  <nav class="left_gnbWrap">
+    <a class="close"><img src="/img/cancel.png" /></a>
+    <ul class="left_gnb">
+      <li>
+        <a href="javascript:void(0)" class="bd_top">
+          <span class="text">회사소개</span>
+        </a>
+        <ul>
+          <li><a href="/sub/sub0101.html">대표인사말</a></li>
+          <li><a href="/sub/sub0102.html">홍보영상</a></li>
+          <li><a href="/sub/sub0102.html">기업정보</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span class="text">사업소개</span>
+        </a>
+        <ul>
+          <li><a href="/sub/sub0201.html">InP Quantum Dot</a></li>
+          <li><a href="/sub/sub0202.html">Bio Quantum Dot</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span class="text">제품소개</span>
+        </a>
+        <ul>
+          <li><a href="/sub/sub0201.html">Quantum Dot</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/sub/sub0401.html">
+          <span class="text">Contact Us</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="mo_bg"></div>
+</div>
+
+<script>
+  //모바일메뉴 스크립트
+  $(document).ready(function () {
+    mobile_menu();
+  });
+
+  function mobile_menu() {
+    /* 변수 선언 */
+    var $menu = null;
+    var $left_gnb = null; // 영역 전체
+    var $depth1_wrap = null;
+    var $depth1 = null;
+    var $depth1_btn = null;
+
+    /* 시작 함수 */
+    function start() {
+      init();
+      init_event();
+    }
+    /* 변수 초기화 함수 */
+    function init() {
+      $menu = $(".menu");
+      $left_gnb = $(".left_gnbWrap"); // 영역 전체
+      $depth1_wrap = $(".left_gnb>li");
+      $depth1 = $depth1_wrap.children("ul");
+      $depth1_btn = $depth1_wrap.children("a");
+    }
+    /* 이벤트 함수 */
+    function init_event() {
+      /* 모바일 메뉴 버튼 클릭했을때 모바일 메뉴영역 나오게 하기 */
+      $menu.click(function () {
+        //event.preventDefault();
+        $left_gnb.addClass("on");
+        $(".mo_bg").show();
+      });
+
+      /* x버튼 눌렀을때 모바일 메뉴 닫기 */
+      $(".close").click(function () {
+        event.preventDefault();
+
+        $left_gnb.removeClass("on");
+        $(".mo_bg").hide();
+
+        // x버튼 누르면 시간차 약간두고 소메뉴 닫히게 하기
+        setTimeout(function () {
+          $depth1_btn.removeClass("on");
+          $depth1.slideUp();
+        }, 300);
+      });
+
+      //bg 누르면 모바일 메뉴 닫기
+      $(".mo_bg").click(function () {
+        event.preventDefault();
+        $left_gnb.removeClass("on");
+        $(".mo_bg").hide();
+      });
+
+      /* depth1의 각메뉴 클릭시 depth2 나오게 하기 */
+      $depth1_btn.click(function (event) {
+        //event.preventDefault();
+        var $this = $(this);
+        var $this_ul = $this.siblings("ul");
+
+        var check = $this.hasClass("on");
+        if (check) {
+          $this.removeClass("on");
+          $this_ul.stop(true, true).slideUp();
+        } else {
+          $depth1_btn.removeClass("on");
+          $depth1.stop().slideUp();
+          $this.addClass("on");
+          $this_ul.stop(true, true).slideDown();
+        }
+      });
+
+      /* 디바이스 크기 변경시 모바일 메뉴영역 숨기기 */
+      $(window).resize(function () {
+        $left_gnb.removeClass("on");
+      });
+
+      $(window).scroll(function () {
+        event.preventDefault();
+        $left_gnb.removeClass("on");
+        $(".mo_bg").hide();
+      });
+    }
+
+    start(); // 시작 호출
+  }
+</script>
