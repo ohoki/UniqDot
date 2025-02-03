@@ -1,6 +1,5 @@
 @charset "utf-8";
 @import url("base.css");
-@import url("common.css");
 @import url("main.css");
 @import url("sub.css");
 @import url("");
@@ -388,7 +387,7 @@
   display: inline-block;
   margin-bottom: 3px;
 }
-#ft_wr .ft_cts .ft_txt > span {
+#ft_wr .ft_cts .ft_txt li > span {
   margin-right: 15px;
 }
 #ft_wr .ft_cts .ft_txt .ft_title {
@@ -504,12 +503,16 @@
   }
 }
 
+main {
+  margin-bottom: 100px;
+}
 /*슬라이드*/
 .bx-wrapper {
   margin-bottom: 0 !important;
   box-shadow: none !important;
   border: 0 !important;
 }
+
 .bx-controls {
   display: none !important;
 }
