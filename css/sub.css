@@ -84,44 +84,6 @@ font-family: 'Roboto', sans-serif;
   background: url("/img/main/mainVisual01.jpg") no-repeat center;
 }
 
-/* lnb */
-#lnb {
-  width: 200px;
-  margin-right: 60px;
-}
-#lnb .d1_tit {
-  font-size: 18px;
-  font-weight: 500;
-  color: #00497d;
-  text-align: center;
-  padding: 0 0 20px 0;
-  border-bottom: 2px solid #dcdcdc;
-}
-#lnb .list {
-}
-#lnb .list ul {
-}
-#lnb .list ul li {
-  border-bottom: 1px solid #dcdcdc;
-  height: 64px;
-}
-#lnb .list ul li a {
-  display: block;
-  padding: 0 30px 0 20px; /* height:64px; line-height:64px;  */
-  position: relative;
-  top: 50%;
-  line-height: 1.3;
-  font-size: 15px;
-  transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-}
-#lnb .list ul li.on a {
-  background: url("/img/sub/lnb_arr.gif") no-repeat 182px center;
-}
-
 /* cont */
 #lnb,
 #cont {

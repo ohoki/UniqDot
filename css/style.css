@@ -207,6 +207,7 @@
     display: block;
     background: url(/img/menu.png) no-repeat;
     background-size: cover;
+    cursor: pointer;
   }
   a.close {
     width: 70px;
@@ -217,6 +218,7 @@
     display: block;
     top: 0;
     background: #ededed;
+    cursor: pointer;
   }
   a.close img {
     width: 20px;

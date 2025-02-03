@@ -1,98 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="http://uniq-dot.com/css/default.css" />
-    <!--[if lte IE 8]>
-      <script src="http://uniq-dot.com/js/html5.js"></script>
-    <![endif]-->
-    <script>
-      // 자바스크립트에서 사용하는 전역변수 선언
-      var g5_url = "http://uniq-dot.com";
-      var g5_bbs_url = "http://uniq-dot.com/bbs";
-      var g5_is_member = "";
-      var g5_is_admin = "";
-      var g5_is_mobile = "";
-      var g5_bo_table = "";
-      var g5_sca = "";
-      var g5_editor = "";
-      var g5_cookie_domain = "";
-    </script>
-    <script src="http://uniq-dot.com/js/jquery-1.8.3.min.js"></script>
-    <script src="http://uniq-dot.com/js/jquery.menu.js?ver=171222"></script>
-    <script src="http://uniq-dot.com/js/common.js?ver=171222"></script>
-    <script src="http://uniq-dot.com/js/wrest.js?ver=171222"></script>
-    <script src="http://uniq-dot.com/js/placeholders.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;display=swap"
-      rel="stylesheet"
-    />
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta http-equiv="imagetoolbar" content="no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="/js/slick.min.js"></script>
+        <link rel="icon" href="/img/favicon.png" type="image/png" sizes="16x16" />
+        <link rel="stylesheet" href="/css/default.css" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;display=swap" />
 
-    <link
-      rel="stylesheet"
-      href="http://uniq-dot.com/js/font-awesome/css/font-awesome.min.css"
-    />
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("/common/header.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("header").innerHTML = data;
-          });
+        <script src="/js/common.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+        <title>유니크닷</title>
+    </head>
+    <body>
+        <div id="header"></div>
 
-        fetch("/common/footer.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("footer").innerHTML = data;
-          });
-      });
-    </script>
-  </head>
-  <body>
-    <div id="header"></div>
-
-    <div class="sub0201 sub">
-      <div class="sub_title">
-        <img src="/img/sub02_title_pc.jpg" class="pc" />
-        <img src="/img/sub02_title_mo.jpg" class="mo" />
-        <h1>제품소개</h1>
-      </div>
-      <div class="sub02_content">
-        <div class="width">
-          <div class="sub02_title">
-            <span></span>
-            <p>InP Quantum Dot</p>
-          </div>
-          <div class="contents">
-            유해한 중금속을 이용하지 않아 상대적으로 안전하면서 발광 효율이 높고
-            안정성이 뛰어난 Quantum Dot 을 개발하여, 양자점 기반
-            발광다이오드(QLED) 기술 및 양자점 나노잉크 제조 기술을
-            유기발광다이오드(OLED) 기술과 결합해 안정적이면서도, 효율이 높은
-            QLED 상용화에 도움을 줍니다. 유독한 중금속인 카드뮴을 사용하지 않고
-            인화인듐 등을 활용해 스스로 빛을 내고 효율도 높은 안정적인 Quantum
-            Dot 및 QLED 소자를 개발하고 있습니다.
-          </div>
-          <div class="sub02_photo">
-            <ul>
-              <li>
-                <img src="/img/inp0101.jpg" />
-                <p>InP Quantum Dots</p>
-              </li>
-              <li>
-                <img src="/img/inp02.jpg" />
-                <p>InP QD 전자현미경 이미지</p>
-              </li>
-            </ul>
-          </div>
+        <div class="sub0201 sub">
+            <div class="sub_title">
+                <img src="/img/sub02_title_pc.jpg" class="pc" />
+                <img src="/img/sub02_title_mo.jpg" class="mo" />
+                <h1>제품소개</h1>
+            </div>
+            <div class="sub02_content">
+                <div class="width">
+                    <div class="sub02_title">
+                        <span></span>
+                        <p>InP Quantum Dot</p>
+                    </div>
+                    <div class="contents">
+                        유해한 중금속을 이용하지 않아 상대적으로 안전하면서 발광
+                        효율이 높고 안정성이 뛰어난 Quantum Dot 을 개발하여,
+                        양자점 기반 발광다이오드(QLED) 기술 및 양자점 나노잉크
+                        제조 기술을 유기발광다이오드(OLED) 기술과 결합해
+                        안정적이면서도, 효율이 높은 QLED 상용화에 도움을 줍니다.
+                        유독한 중금속인 카드뮴을 사용하지 않고 인화인듐 등을
+                        활용해 스스로 빛을 내고 효율도 높은 안정적인 Quantum Dot
+                        및 QLED 소자를 개발하고 있습니다.
+                    </div>
+                    <div class="sub02_photo">
+                        <ul>
+                            <li>
+                                <img src="/img/inp0101.jpg" />
+                                <p>InP Quantum Dots</p>
+                            </li>
+                            <li>
+                                <img src="/img/inp02.jpg" />
+                                <p>InP QD 전자현미경 이미지</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div id="footer"></div>
-  </body>
+        <div id="footer"></div>
+    </body>
 </html>
