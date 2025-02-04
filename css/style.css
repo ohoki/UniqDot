@@ -1186,11 +1186,10 @@ video {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  /*이 속성을 써 줘야지만 위에 결과물을 낼수가 있습니다.*/
   background-attachment: fixed;
   width: 100%;
-  height: 400px;
-  margin-top: 80px;
+  height: 800px;
+  margin-top: 20px;
   color: #fff;
 }
 .map_attachment .map_content {
