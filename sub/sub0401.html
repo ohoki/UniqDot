@@ -30,7 +30,6 @@
             </div>
             <div class="width">
                 <div class="sub04_content">
-                    
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d811.2708214592587!2d129.1887088292425!3d35.576336089539375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDM0JzM0LjgiTiAxMjnCsDExJzIxLjMiRQ!5e0!3m2!1sko!2skr!4v1580180897137!5m2!1sko!2skr"
                         width="100%"
@@ -40,30 +39,40 @@
                         allowfullscreen=""
                     ></iframe>
                     <div class="map_attachment">
-                        <div style="width: 100%; height:100%; background-color: rgba(255, 255, 255, 0.7); padding: 2%; color: black;">
+                        <div class="contact">
                             <img src="../img/logo.png" />
-                            <br/>
-                            주소 : 44919 울산광역시 울주군 언양읍 유니스트길 50, 251동 612호<br/>
-                            Tel : 052.217.3549<br />
-                            E-mail : uniqdotup@gmail.com<br />
-
-                            <form id="contact-form" method="post">
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" required><br><br>
-                        
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" required><br><br>
-                        
-                                <label for="message">Message:</label><br>
-                                <textarea id="message" name="message" required></textarea><br><br>
-                        
-                                <button type="submit">Send Email</button>
-                            </form>
+                            <div class="contact-info">
+                                <p>
+                                    <b>주소</b> : 44919 울산광역시 울주군 언양읍 유니스트길 50, 251동 612호
+                                </p>
+                                <p>
+                                    <b>Tel</b> : 052.217.3549
+                                </p>
+                                <p>
+                                    <b>E-mail</b> : uniqdotup@gmail.com
+                                </p>
+                            </div>
+                            <div id="contact-form-box">
+                                <form id="contact-form" method="post">
+                                    <label>
+                                        <b>Name</b> <span class="required">*</span>
+                                    </label>
+                                    <input type="text" id="name" name="name" required>
+                                    <label>
+                                        <b>Email</b> <span class="required">*</span>
+                                    </label>
+                                    <input type="email" id="email" name="email" required>
+                                    <label>
+                                        <b>Message</b> <span class="required">*</span>
+                                    </label>
+                                    <textarea id="message" name="message" required></textarea>
+                                    <button type="submit">Send Email</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
 
         <div id="footer"></div>

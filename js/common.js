@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const isIndexPage = window.location.pathname.endsWith("index.html") || window.location.pathname.endsWith("/");
-    console.log('hoki test 1  > ' + isIndexPage);
-    console.log('hoki test 2  > ' + window.location.pathname);
-    console.log('hoki test 3  > ' + typeof window.location.pathname);
-    console.log('hoki test 4  > ' + window.location.pathname === undefined);
     const headerPath = isIndexPage ? 'common/header.html' : '../common/header.html';
     const footerPath = isIndexPage ? 'common/footer.html' : '../common/footer.html';
 
