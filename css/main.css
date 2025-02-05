@@ -133,7 +133,7 @@ font-family: 'Roboto', sans-serif;
   content: "";
   width: 208px;
   height: 208px;
-  background: url("/img/main/main_txt_bg.png") no-repeat center;
+  background: url("img/main/main_txt_bg.png") no-repeat center;
   display: block;
   position: absolute;
   left: 0;
@@ -165,10 +165,10 @@ font-family: 'Roboto', sans-serif;
   -ms-transform: translateY(-50%);
 }
 #mainVisual .visu01 {
-  background: url("/img/main/mainVisual01.jpg") no-repeat center;
+  background: url("img/main/mainVisual01.jpg") no-repeat center;
 }
 #mainVisual .visu02 {
-  background: url("/img/main/mainVisual02.jpg") no-repeat center;
+  background: url("img/main/mainVisual02.jpg") no-repeat center;
 }
 #mainVisual .slick-arrow {
   width: 29px;
@@ -185,11 +185,11 @@ font-family: 'Roboto', sans-serif;
   -ms-transform: translateY(-50%);
 }
 #mainVisual .slick-prev {
-  background: url("/img/main/arr_prev_01.png") no-repeat center;
+  background: url("img/main/arr_prev_01.png") no-repeat center;
   left: 45px;
 }
 #mainVisual .slick-next {
-  background: url("/img/main/arr_next_01.png") no-repeat center;
+  background: url("img/main/arr_next_01.png") no-repeat center;
   right: 45px;
 }
 #mainVisual .slick-dots {
@@ -272,7 +272,7 @@ font-family: 'Roboto', sans-serif;
 }
 #mainContents .about .list ul li .icon {
   height: 187px;
-  background: url("/img/main/pattern_bg.jpg") no-repeat center;
+  background: url("img/main/pattern_bg.jpg") no-repeat center;
   position: relative;
 }
 #mainContents .about .list ul li .icon p {
@@ -294,22 +294,22 @@ font-family: 'Roboto', sans-serif;
   -webkit-box-sizing: border-box;
 }
 #mainContents .about .list ul li:nth-child(1) .icon p {
-  background: url("/img/main/main_icon01_off.png") no-repeat center;
+  background: url("img/main/main_icon01_off.png") no-repeat center;
 }
 #mainContents .about .list ul li:nth-child(2) .icon p {
-  background: url("/img/main/main_icon02_off.png") no-repeat center;
+  background: url("img/main/main_icon02_off.png") no-repeat center;
 }
 #mainContents .about .list ul li:nth-child(3) .icon p {
-  background: url("/img/main/main_icon03_off.png") no-repeat center;
+  background: url("img/main/main_icon03_off.png") no-repeat center;
 }
 #mainContents .about .list ul li:nth-child(1):hover .icon p {
-  background: url("/img/main/main_icon01_on.png") no-repeat center;
+  background: url("img/main/main_icon01_on.png") no-repeat center;
 }
 #mainContents .about .list ul li:nth-child(2):hover .icon p {
-  background: url("/img/main/main_icon02_on.png") no-repeat center;
+  background: url("img/main/main_icon02_on.png") no-repeat center;
 }
 #mainContents .about .list ul li:nth-child(3):hover .icon p {
-  background: url("/img/main/main_icon03_on.png") no-repeat center;
+  background: url("img/main/main_icon03_on.png") no-repeat center;
 }
 #mainContents .about .list ul li .txt_box {
 }
@@ -340,7 +340,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 #mainContents .product {
-  background: url("/img/main/pd_bg.jpg") no-repeat center top;
+  background: url("img/main/pd_bg.jpg") no-repeat center top;
   background-size: cover;
 }
 .pd_list {
@@ -407,11 +407,11 @@ font-family: 'Roboto', sans-serif;
   -ms-transform: translateY(-50%);
 }
 .pd_list .slick-prev {
-  background: url("/img/main/main_prev02.png") no-repeat center;
+  background: url("img/main/main_prev02.png") no-repeat center;
   left: -104px;
 }
 .pd_list .slick-next {
-  background: url("/img/main/main_next02.png") no-repeat center;
+  background: url("img/main/main_next02.png") no-repeat center;
   right: -104px;
 }
 
@@ -445,7 +445,7 @@ font-family: 'Roboto', sans-serif;
   width: 100px;
   height: 98px;
   border-radius: 50%;
-  background: url("/img/main/pattern_bg2.png") no-repeat center;
+  background: url("img/main/pattern_bg2.png") no-repeat center;
 }
 #mainContents .info ul li {
   width: 50%;
@@ -459,17 +459,17 @@ font-family: 'Roboto', sans-serif;
   display: block;
   border: 2px solid #e9e9e9;
   padding: 38px 0 38px 70px;
-  background: url("/img/main/pattern_bg4.png") no-repeat center;
+  background: url("img/main/pattern_bg4.png") no-repeat center;
 }
 #mainContents .info ul li:nth-child(1) .icon p {
   width: 100%;
   height: 100%;
-  background: url("/img/main/main_icon04_off.png") no-repeat center;
+  background: url("img/main/main_icon04_off.png") no-repeat center;
 }
 #mainContents .info ul li:nth-child(2) .icon p {
   width: 100%;
   height: 100%;
-  background: url("/img/main/main_icon05_off.png") no-repeat center;
+  background: url("img/main/main_icon05_off.png") no-repeat center;
 }
 #mainContents .info ul li a div:first-child {
   margin-right: 30px;
@@ -482,10 +482,10 @@ font-family: 'Roboto', sans-serif;
   color: #00497d !important;
 }
 #mainContents .customer .info ul li:nth-child(1) a:hover .icon p {
-  background: url("/img/main/main_icon04_on.png") no-repeat center;
+  background: url("img/main/main_icon04_on.png") no-repeat center;
 }
 #mainContents .customer .info ul li:nth-child(2) a:hover .icon p {
-  background: url("/img/main/main_icon05_on.png") no-repeat center;
+  background: url("img/main/main_icon05_on.png") no-repeat center;
 }
 
 /* #mainContents .customer {}
@@ -496,15 +496,15 @@ font-family: 'Roboto', sans-serif;
 
 #mainContents .customer .info ul li { text-align:center; float:left; width:50%; border:1px solid #e9e9e9; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; padding:6px;}
 
-#mainContents .customer .info ul li .icon { width:120px; height:120px; border-radius:50%;  margin:14px auto 0; background:url("/img/main/pattern_bg2.png") no-repeat center; }
+#mainContents .customer .info ul li .icon { width:120px; height:120px; border-radius:50%;  margin:14px auto 0; background:url("img/main/pattern_bg2.png") no-repeat center; }
 
 #mainContents .customer .info ul li .icon p { width:100%; height:100%; }
 
-#mainContents .customer .info ul li:nth-child(1) .icon p { background:url("/img/main/main_icon04_off.png") no-repeat center;}
+#mainContents .customer .info ul li:nth-child(1) .icon p { background:url("img/main/main_icon04_off.png") no-repeat center;}
 
-#mainContents .customer .info ul li:nth-child(2) .icon p { background:url("/img/main/main_icon05_off.png") no-repeat center;}
+#mainContents .customer .info ul li:nth-child(2) .icon p { background:url("img/main/main_icon05_off.png") no-repeat center;}
 
-#mainContents .customer .info ul li a { display:block; border:2px solid #e9e9e9; padding:36px 0; background:url("/img/main/pattern_bg3.png") no-repeat center;}
+#mainContents .customer .info ul li a { display:block; border:2px solid #e9e9e9; padding:36px 0; background:url("img/main/pattern_bg3.png") no-repeat center;}
 
 #mainContents .customer .info ul li a:hover { border:2px solid #00497d;}
 
@@ -512,8 +512,8 @@ font-family: 'Roboto', sans-serif;
 
 #mainContents .customer .info ul li a:hover .tit_s1 p { color:#00497d !important;}
 
-#mainContents .customer .info ul li:nth-child(1) a:hover .icon p { background:url("/img/main/main_icon04_on.png") no-repeat center;}
+#mainContents .customer .info ul li:nth-child(1) a:hover .icon p { background:url("img/main/main_icon04_on.png") no-repeat center;}
 
-#mainContents .customer .info ul li:nth-child(2) a:hover .icon p { background:url("/img/main/main_icon05_on.png") no-repeat center;}
+#mainContents .customer .info ul li:nth-child(2) a:hover .icon p { background:url("img/main/main_icon05_on.png") no-repeat center;}
 
  */

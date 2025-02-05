@@ -69,19 +69,19 @@ font-family: 'Roboto', sans-serif;
   -ms-transform: translateY(-50%);
 }
 .sv01 {
-  background: url("/img/main/mainVisual01.jpg") no-repeat center;
+  background: url("img/main/mainVisual01.jpg") no-repeat center;
 }
 .sv02 {
-  background: url("/img/main/mainVisual01.jpg") no-repeat center;
+  background: url("img/main/mainVisual01.jpg") no-repeat center;
 }
 .sv03 {
-  background: url("/img/main/mainVisual01.jpg") no-repeat center;
+  background: url("img/main/mainVisual01.jpg") no-repeat center;
 }
 .sv04 {
-  background: url("/img/main/mainVisual01.jpg") no-repeat center;
+  background: url("img/main/mainVisual01.jpg") no-repeat center;
 }
 .sv05 {
-  background: url("/img/main/mainVisual01.jpg") no-repeat center;
+  background: url("img/main/mainVisual01.jpg") no-repeat center;
 }
 
 /* cont */
@@ -142,7 +142,7 @@ font-family: 'Roboto', sans-serif;
 
 /* 인사말 */
 #greeting {
-  background: url("/img/sub/greeting_bg.jpg") no-repeat center bottom;
+  background: url("img/sub/greeting_bg.jpg") no-repeat center bottom;
   padding-bottom: 350px;
 }
 #greeting .txt {

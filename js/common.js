@@ -1,17 +1,58 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("/common/header.html")
+    const isIndexPage = window.location.pathname.endsWith("index.html") || window.location.pathname.endsWith("/");
+    console.log('hoki test 1  > ' + isIndexPage);
+    console.log('hoki test 2  > ' + window.location.pathname);
+    console.log('hoki test 3  > ' + typeof window.location.pathname);
+    console.log('hoki test 4  > ' + window.location.pathname === undefined);
+    const headerPath = isIndexPage ? 'common/header.html' : '../common/header.html';
+    const footerPath = isIndexPage ? 'common/footer.html' : '../common/footer.html';
+
+    fetch(headerPath)
     .then((response) => response.text())
     .then((data) => {
         document.getElementById("header").innerHTML = data;
+
+        if (isIndexPage) {
+            const header = document.getElementById("header");
+            const links = header.querySelectorAll('a');
+            const images = header.querySelectorAll('img');
+
+            convertPath(links, images);
+        }
     });
 
-    fetch("/common/footer.html")
+    fetch(footerPath)
     .then((response) => response.text())
     .then((data) => {
         document.getElementById("footer").innerHTML = data;
+
+        if (isIndexPage) {
+            const footer = document.getElementById("ft");
+            const links = footer.querySelectorAll('a');
+            const images = footer.querySelectorAll('img');
+
+            convertPath(links, images);
+        }
+
         displayTopButton();
     });
 });
+
+function convertPath(links, images) {
+    links.forEach(link => {
+        let href = link.getAttribute('href');
+        if (href) {
+            link.setAttribute('href', href.replace(/^\.\.\//, ''));
+        }
+    });
+
+    images.forEach(img => {
+        let src = img.getAttribute('src');
+        if (src) {
+            img.setAttribute('src', src.replace(/^\.\.\//, ''));
+        }
+    });
+}
 
 //Header
 $(document).ready(function () {
